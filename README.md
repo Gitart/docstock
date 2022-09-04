@@ -1,0 +1,2 @@
+# docstock
+Documenattion for stock
