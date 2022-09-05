@@ -1,7 +1,7 @@
 ## Structure
 
-```json
 // Структура JSON файла
+```json
   Code            string         // Код товара ID запчати товара
   ReplaceCode     string         // Код замены ID запчати товара
   Title           string         // Наименование Запчасти
