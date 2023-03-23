@@ -48,20 +48,35 @@
 |Remark|          string | Примечание
 
 
+## JSON 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```json
+{ 
+  "id"          : 12334,
+  "order_id"    : 1234566,
+  "number"      : "d-200334",
+  "create_at    : "20202-02-01 15:04:32",
+  "client_id"   : 125,
+  "client_name" : "OOO 'System Technologic'", 
+  "toatl"       : 1323.89,
+  "type"        : "cash", 
+  "payment"     : "ok", 
+  "items"       : [
+                    { 
+                        "id_product":12359,
+                        "name": "Product name ",
+                        "qty":2,
+                        "price":123.23,
+                        "total_sum":246.46,
+                        "remark":""
+                     },
+                    { 
+                        "id_product":12459,
+                        "name": "Product name other",
+                        "qty": 1,
+                        "price":23.23,
+                        "total_sum":23.23,
+                        "remark":""
+                     },
+                  ]
+  }
