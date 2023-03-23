@@ -1,2 +1,7 @@
-# docstock
-Documenattion for stock
+# DOCS STOCK
+
+Documenattion for stock :
+
+1. Обмен данными с сайтом (заказами) 
+2. Актуализация остатков на сайте для формирования заказа 
+
