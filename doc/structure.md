@@ -50,7 +50,10 @@
 
 ## JSON 
 
+GET api/v1/orders/new 
+
 ```json
+
 { 
   "id"          : 12334,
   "order_id"    : 1234566,
@@ -61,7 +64,8 @@
   "toatl"       : 1323.89,
   "type"        : "cash", 
   "payment"     : "ok", 
-  "items"       : [
+  "status"      : "new",
+  "products"    : [
                     { 
                         "id_product" : 12359,
                         "name"       : "Product name ",
@@ -80,3 +84,34 @@
                      }
                   ]
   }
+```
+
+
+**POST** api/v1/products
+```json
+[
+  {
+    "id"                : 12345,
+    "code"              : "A-203004044",
+    "replace_code"      : "A-203004044",
+    "title"             : "Parts for cars",
+    "brand_id"          : 1233,
+    "brand"             : "BMW",
+    "netto"             : "123.89",
+    "vendor_id"         : 2354,
+    "Vendor_code"       : "C-239003",
+    "exchange_eur"      : 32.788,
+    "exchange_usd"      : 48.788,
+    "price"             : 248.788,
+    "description        : "Примечание",
+    "markup"            : 20,
+    "price_euro_murkup" : 21,
+    "price_uah_murkup"  : 24
+  },
+  {....},
+  {....},
+  {....}
+]
+  
+```
+
