@@ -9,9 +9,11 @@
 |Id|              int64  | Уникальный номер
 |Code|            string | * Код товара ID запчати товара
 |ReplaceCode|     string | Код замены ID запчати товара
-|Title|           string | Наименование Запчасти
+|Title|           string | Наименование запчасти
+|Description      string | Описание товара  
 |BrandId|         int64  | * Brand Id
 |Brand|           string | * Бренд имя
+|Qt|              float64| * Количество на складе (остаток)    
 |Netto|           string | Цена от поставщика в текстовом виде
 |VendorId|        int64  | Код поставщика
 |VendorCode|      string | Код Запчасти
@@ -22,10 +24,42 @@
 |Price|           float64| * Цена в гривнах
 |PriceIn|         float64| Цена входная
 |Description|     string | Примечание
-|Markup|          float64| Наценка в процентах 20% по умолчанию
+|Markup|          float64| Наценка в процентах 
 |PriceEuroMurkup| float64| Наценка в евро
 |PriceUahMurkup|  float64| Наценка в грн
 |Unit|            float64| Единица измерения
+
+
+**Example JSON :**
+
+POST  .../api/v1/products
+
+```json
+{
+      "title"        : "Блок клопанов",
+      "brand"        : "Toyota",
+      "code"         : "CODE-12334",
+      "code8"        : "CODE-emilia",
+      "price"        : 515.55,
+      "price_in"     : 55.55,
+      "price_ua8h"   : 255.55,
+      "price_eur"    : 12255.55,
+      "qt"           : 1,
+      "description"  : "Тормозные колодки для БМВ",
+      "cell"         : "Ячейка 12-Ф",
+      "row"          : "Полка 14-Б",
+      "note"         : "Описание для постаащика",
+      "unit"         : "шт",
+      "weight"       : 0.123,
+      "barcode"      : "1223-2002",
+      "replace_code" : "122233-93993",
+      "stock_qty"    : 12,
+      "markup"       : 3,
+      "max_qt"       : 12,
+      "min_qt"       : 2
+}
+```
+
 
 
 ### Order
