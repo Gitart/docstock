@@ -37,6 +37,20 @@
 | POST  | api/v1/products |Добавление (обновление) по коду 
 
 
+## CURL
+```
+curl -XPOS 'https://www.mainsite.com/api/v1/products' 
+--header 'token: XXXXXXXXXXXXXXXXXXXXXXXXXXXX' 
+--header 'Content-Type: application/json'
+--data '  {
+             "title"        : "parts name",
+             ....
+          }
+```
+
+
+## Data JSON
+
 ```json
 {
    "title"        : "Блок клопанов",
