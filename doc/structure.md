@@ -10,7 +10,7 @@
 |Code|            string | * Код товара ID запчати товара
 |ReplaceCode|     string | Код замены ID запчати товара
 |Title|           string | Наименование запчасти
-|Description      string | Описание товара  
+|Description|     string | Описание товара  
 |BrandId|         int64  | * Brand Id
 |Brand|           string | * Бренд имя
 |Qt|              float64| * Количество на складе (остаток)    
