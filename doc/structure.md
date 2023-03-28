@@ -32,7 +32,7 @@
 
 **Example JSON :**
 
-POST  .../api/v1/products
+POST  api/v1/products
 
 ```json
 {
