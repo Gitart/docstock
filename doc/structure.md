@@ -49,6 +49,19 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
 ```
 
 
+## Return 
+
+```
+}
+    "code": "CODE",
+    "message": "Товар был успешно добавлен на склад.",
+    "name": "Прокладка",
+    "status": "ok"
+}
+```
+
+
+
 ## Data JSON
 
 ```json
