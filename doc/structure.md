@@ -32,31 +32,33 @@
 
 **Example JSON :**
 
-POST  api/v1/products
+| Method|url| Descripton|
+|-------|-----------------|------------|
+| POST  | api/v1/products |Добавление (обновление) по коду 
+
 
 ```json
 {
-      "title"        : "Блок клопанов",
-      "brand"        : "Toyota",
-      "code"         : "CODE-12334",
-      "code8"        : "CODE-emilia",
-      "price"        : 515.55,
-      "price_in"     : 55.55,
-      "price_ua8h"   : 255.55,
-      "price_eur"    : 12255.55,
-      "qt"           : 1,
-      "description"  : "Тормозные колодки для БМВ",
-      "cell"         : "Ячейка 12-Ф",
-      "row"          : "Полка 14-Б",
-      "note"         : "Описание для постаащика",
-      "unit"         : "шт",
-      "weight"       : 0.123,
-      "barcode"      : "1223-2002",
-      "replace_code" : "122233-93993",
-      "stock_qty"    : 12,
-      "markup"       : 3,
-      "max_qt"       : 12,
-      "min_qt"       : 2
+   "title"        : "Блок клопанов",
+   "brand"        : "Toyota",
+   "code"         : "CODE-12334",
+   "code8"        : "CODE-emilia",
+   "price"        : 515.55,
+   "price_in"     : 55.55,
+   "price_eur"    : 12255.55,
+   "qt"           : 1,
+   "description"  : "Тормозные колодки для БМВ",
+   "cell"         : "Ячейка 12-Ф",
+   "row"          : "Полка 14-Б",
+   "note"         : "Описание для поставщика",
+   "unit"         : "шт",
+   "weight"       : 0.123,
+   "barcode"      : "1223-2002",
+   "replace_code" : "122233-93993",
+   "stock_qty"    : 12,
+   "markup"       : 3,
+   "max_qt"       : 12,
+   "min_qt"       : 2
 }
 ```
 
