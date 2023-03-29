@@ -16,7 +16,7 @@
 |Qt|              float64| * Количество на складе (остаток)    
 |Netto|           string | Цена от поставщика в текстовом виде
 |VendorId|        int64  | Код поставщика
-|VendorCode|      string | Код Запчасти
+|VendorCode|      string | Код запчасти от производителя
 |ExchangeEur|     float64| Курс в евро
 |ExchangeUsd|     float64| Курс в гривнах
 |PriceEur|        float64| Цена в евро
