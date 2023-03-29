@@ -11,6 +11,7 @@
 |ReplaceCode|     string | Код замены 
 |Title|           string | Наименование запчасти
 |Description|     string | Описание товара  
+|BarCode|         string | Код для шритри-кода
 |BrandId|         int64  | * Brand Id
 |Brand|           string | * Бренд имя
 |Qt|              float64| * Количество на складе (остаток)    
