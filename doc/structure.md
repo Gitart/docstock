@@ -28,7 +28,7 @@
 |Markup|          float64| Наценка в процентах 
 |PriceEuroMurkup| float64| Наценка в евро
 |PriceUahMurkup|  float64| Наценка в грн
-|Unit|            float64| Единица измерения
+|Unit|            float64| Единица измерения по умолчанию "шт"  
 
 
 **Example JSON :**
