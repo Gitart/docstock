@@ -70,7 +70,7 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
    "barcode"      : "1223-2002",
    "replace_code" : "122233-93993",
    "title"        : "Блок клопанов",
-   "description"  : "Тормозные колодки для БМВ",
+   "description"  : "Блок клапанов в комплекте и направляющими",
    "barand_id"    : 1,
    "brand"        : "Toyota",
    "price"        : 515.55,
