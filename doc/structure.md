@@ -67,6 +67,7 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
 ```json
 {
    "title"        : "Блок клопанов",
+   "barand_id"    : 1,
    "brand"        : "Toyota",
    "code"         : "CODE-12334",
    "code8"        : "CODE-emilia",
