@@ -16,7 +16,7 @@
 |Qt|              float64| * Количество на складе (остаток)    
 |Netto|           string | Цена от поставщика в текстовом виде
 |VendorId|        int64  | Код поставщика
-|VendorCode|      string | Код запчасти от производителя
+|Vendor|          string | Наименование производителя
 |ExchangeEur|     float64| Курс в евро
 |ExchangeUsd|     float64| Курс в гривнах
 |PriceEur|        float64| Цена в евро
@@ -73,6 +73,8 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
    "description"  : "Блок клапанов в комплекте и направляющими",
    "barand_id"    : 1,
    "brand"        : "Toyota",
+   "vendor"       : "VAG",
+   "vendor_id"    : 12,
    "price"        : 515.55,
    "price_in"     : 55.55,
    "price_eur"    : 12255.55,
