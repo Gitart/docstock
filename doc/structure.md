@@ -31,7 +31,7 @@
 |Unit|            float64| Единица измерения по умолчанию "шт"  
 
 
-**Example JSON :**
+## API description 
 
 | Method|Path| Descripton|
 |-------|-----------------|------------|
@@ -67,7 +67,7 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
 
 
 ## Data JSON
-
+**Example JSON :**
 ```json
 {
    "code"         : "CODE-12334",
