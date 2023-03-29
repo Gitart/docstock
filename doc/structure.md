@@ -33,9 +33,12 @@
 
 **Example JSON :**
 
-| Method|url| Descripton|
+| Method|Path| Descripton|
 |-------|-----------------|------------|
 | **POST**  | api/v1/products |Добавление (обновление) по коду 
+| **GET**   | api/v1/products |Получение последних 100 записей товаров
+
+
 
 
 ## CURL
