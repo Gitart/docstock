@@ -10,6 +10,31 @@ This Shop Express API is a modern, secure, and standards based API designed to e
 * Inventory Planning
 * Accounting
 
+Authorisation
+All developers will require an API Key which can be used to generate an access token that is used to authenticate all subsequent requests. Before making calls to a Retail Express client, you must first request an API Key from the client you wish to integrate with. Each API Key is unique to a given client and only provides access to that clients’ data.
+
+Each access token will expire after 60 minutes at which point a new token must be requested.
+
+To authenticate with the Retail Express API, first make a call to the Authentication Token endpoint, passing your API Key in header parameter x-api-key:
+
+https://ccccc.com/v2/auth/token
+
+Assuming a valid API Key is passed, an access token will be returned along with the date/time when it will expire:
+
+{
+
+    "token_type": "Bearer",
+    "access_token": "eyJhbmdWxsX2FjY2VzcyJdfQ.IWPofNEfIu-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "expires_on": "2021-01-31T23:48:23.4672689+00:00"
+
+} 
+
+Requests to other endpoints in the API must include this token (in the Authorization header parameter) and the API Key (again in the x-api-key header parameter):
+
+Authorization: Bearer eyJhbmdWxsX2FjY2VzcyJdfQ.IWPofNEfIu-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+x-api-key: hkldfhTYDnhlkadsfadsdfTYSDFNFDSF
+
+Once a token expires, the same call to the Authentication Token endpoint is required to retrieve a new token. Once a token has expired, or if an invalid token is passed, a 401 Unauthorised response will be returned.
 
 ## Rate Limits
 The Shop Express API is rate limited to maintain the quality of service and performance of the platform. Currently rate limits are imposed on a client basis so if you integrate with multiple clients there will be a separate rate limit for each client / API Key. However, requests from all developers / API Keys count towards the rate limits so even if your application does not exceed the limits, you may still hit the limit for a given client.
