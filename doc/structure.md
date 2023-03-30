@@ -97,6 +97,37 @@ curl -XPOS 'https://www.mainsite.com/api/v1/products'
 
 
 
+
+# Response Codes
+### 200 OK
+The request was successfully processed
+
+### 201 Created
+The request was successfully processed and a new resource was created
+
+### 400 Bad Request
+The request was not understood, generally due to bad request syntax
+
+### 401 Unauthorised
+Invalid, missing, or expired credentials
+
+### 404 Not Found
+Requested resource or endpoint could not be found
+
+### 429 Too Many Requests
+The rate limits for the client have been exceeded
+
+### 500 Internal Server Error
+An internal error occurred in Retail Express. Please contact Support.
+
+### 503 Service Unavailable
+The server is currently unavailable. Please contact Support.
+
+### 504 Gateway Timeout
+The request timed out. Retail Express waits up to 60 seconds for a response. 
+
+
+
 ### Order
 |    Поле                | Значение            |Наименование|
 |------------------------|---------------------|-----------|
