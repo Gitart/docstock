@@ -1,5 +1,37 @@
 # API
 ## API description 
+#### Getting Started with the Shop Express API  
+
+The Shop Express API allows developers to integrate with and extend the in-built features of the Retail Express platform. It is a RESTful API based on the OpenAPI specification and is the focus for all development and enhancement moving forwards.
+
+This Shop Express API is a modern, secure, and standards based API designed to eventually replace all of our legacy SOAP XML services:
+* Webstore/eCommerce
+* Warehouse Management
+* Inventory Planning
+* Accounting
+
+
+## Rate Limits
+The Shop Express API is rate limited to maintain the quality of service and performance of the platform. Currently rate limits are imposed on a client basis so if you integrate with multiple clients there will be a separate rate limit for each client / API Key. However, requests from all developers / API Keys count towards the rate limits so even if your application does not exceed the limits, you may still hit the limit for a given client.
+
+**There are two forms of limits imposed:**
+
+300 requests in any single 1 minute, or on average 5 requests per second
+100,000 total requests in a 24 hour period
+
+If you hit the per minute rate limit you will receive a 429 Too Many requests response and will need to retry your request after a short period of time.
+
+If you hit the daily quota, you will again receive a 429 Too Many Requests response but you will not be able to make any further requests until the following day.
+
+The per minute limits are designed to allow short bursts of frequent requests as required - integrations should not constantly make requests at these limits or the daily limit will be rapidly reached.
+
+We expect all developers to design their integrations using industry standard techniques for limiting requests within these rate limits and to utilise caching techniques where possible to reduce the overall number of calls.
+
+These rate limits may change at any time.
+
+
+
+
 
 | Method|Path| Descripton|
 |-------|-----------------|------------|
