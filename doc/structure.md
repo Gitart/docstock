@@ -87,11 +87,10 @@ These rate limits may change at any time.
 |PriceUsd|        float64| Цена в долларах
 |Price|           float64| * Цена в гривнах
 |PriceIn|         float64| Цена входная
-|Description|     string | Примечание
 |Markup|          float64| Наценка в процентах 
 |PriceEuroMurkup| float64| Наценка в евро
 |PriceUahMurkup|  float64| Наценка в грн
-|Unit|            float64| Единица измерения по умолчанию "шт"  
+|Unit|            string| Единица измерения по умолчанию "шт"  
 
 
 
