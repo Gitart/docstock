@@ -108,10 +108,11 @@ These rate limits may change at any time.
 curl -X POST 'https://www.mainsite.com/api/gateway/stock/batch' 
 --header 'token: XXXXXXXXXXXXXXXXXXXXXXXXXXXX' 
 --header 'Content-Type: application/json'
---data '  {
-             "title"        : "parts name",
-             ....
-          }
+--data '  [
+            {"title": "parts name",....},
+            {"title": "parts name",....},
+            {"title": "parts name",....}
+           ] 
 ```
 
 
