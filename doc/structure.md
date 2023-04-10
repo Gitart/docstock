@@ -2,7 +2,15 @@
 ## API description 
 #### Getting Started with the Shop Express API  
 
-The Shop Express API allows developers to integrate with and extend the in-built features of the Retail Express platform. It is a RESTful API based on the OpenAPI specification and is the focus for all development and enhancement moving forwards.
+**Предусмотрены методы для работы **
+1. **Начало работы** - обнуление всех отстатков в начале дня
+2. **Обновление** - периодичсекое обновление черз установленные промежутки времени  
+3. **Окончание работы** - обнавление данных по текущим остаткам   
+
+
+
+The Shop Express API allows developers to integrate with and extend the in-built features of the Retail Express platform. 
+It is a RESTful API based on the OpenAPI specification and is the focus for all development and enhancement moving forwards.
 
 This Shop Express API is a modern, secure, and standards based API designed to eventually replace all of our legacy SOAP XML services:
 * Webstore/eCommerce
@@ -10,11 +18,10 @@ This Shop Express API is a modern, secure, and standards based API designed to e
 * Inventory Planning
 * Accounting
 
-Authorisation
+**Authorisation**
 All developers will require an API Key which can be used to generate an access token that is used to authenticate all subsequent requests. Before making calls to a Retail Express client, you must first request an API Key from the client you wish to integrate with. Each API Key is unique to a given client and only provides access to that clients’ data.
 
 Each access token will expire after 60 minutes at which point a new token must be requested.
-
 To authenticate with the Retail Express API, first make a call to the Authentication Token endpoint, passing your API Key in header parameter x-api-key:
 
 https://ccccc.com/v2/auth/token
@@ -37,7 +44,10 @@ x-api-key: hkldfhTYDnhlkadsfadsdfTYSDFNFDSF
 Once a token expires, the same call to the Authentication Token endpoint is required to retrieve a new token. Once a token has expired, or if an invalid token is passed, a 401 Unauthorised response will be returned.
 
 ## Rate Limits
-The Shop Express API is rate limited to maintain the quality of service and performance of the platform. Currently rate limits are imposed on a client basis so if you integrate with multiple clients there will be a separate rate limit for each client / API Key. However, requests from all developers / API Keys count towards the rate limits so even if your application does not exceed the limits, you may still hit the limit for a given client.
+The Shop Express API is rate limited to maintain the quality of service and performance of the platform. 
+Currently rate limits are imposed on a client basis so if you integrate with multiple clients there will be a separate rate limit for each client / API Key. 
+However, requests from all developers / API Keys count towards the rate limits so even if your application does not exceed the limits, 
+you may still hit the limit for a given client.
 
 **There are two forms of limits imposed:**
 
@@ -55,13 +65,11 @@ We expect all developers to design their integrations using industry standard te
 These rate limits may change at any time.
 
 
-
-
-
 | Method|Path| Descripton|
 |-------|-----------------|------------|
-| **POST**  | api/v1/products |Добавление (обновление) по коду 
-| **GET**   | api/v1/products |Получение последних 100 записей товаров
+| **POST**  | api/v1/stock/batch |Добавление (обновление) по 200 штук
+| **POST**  | api/v1/stock       |Добавление (обновление) по коду 
+| **GET**   | api/v1/stock       |Получение последних 100 записей товаров
 
 
 ## Структуры данных 
