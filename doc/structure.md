@@ -65,6 +65,7 @@ We expect all developers to design their integrations using industry standard te
 
 These rate limits may change at any time.
 
+## END POINTS
 
 | Method|Path| Descripton|
 |-------|-----------------|------------|
