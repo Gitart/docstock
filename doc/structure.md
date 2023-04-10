@@ -68,7 +68,7 @@ These rate limits may change at any time.
 
 | Method|Path| Descripton|
 |-------|-----------------|------------|
-| **POST**  | api/v1/stock/batch |Добавление (обновление) по 200 штук
+| **POST**  | api/v1/stock/batch |Добавление (обновление) по 200 записей
 | **POST**  | api/v1/stock       |Добавление (обновление) по коду 
 | **GET**   | api/v1/stock       |Получение последних 100 записей товаров
 
